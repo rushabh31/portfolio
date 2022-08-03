@@ -31,4 +31,24 @@
 			font-family: $open-sans;
 		}
 	}
+
 }
+
+#img_width{
+	width: 100%;
+	margin-top: 15%;
+	margin-bottom: 15%;
+}
+
+@font-face{
+    font-family: "chasing";
+    font-size: 40px;
+    src: url("../fonts/Chasing.ttf") format("truetype");
+  }
+
+  
+
+#text_font_change{
+    font-family: "chasing";
+    color: cornsilk;
+  }

@@ -165,17 +165,16 @@
 }
 
 .page-nav {
-	bottom: 40px;
+	bottom: 20px;
 	left: 0;
 	position: absolute;
 	right: 0;
 
 	span {
 		font-family: $open-sans;
-		font-size: 14px;
+		font-size: 24px;
 		font-weight: 500;
 		line-height: 0.9;
-		text-transform: uppercase;
 	}
 }
 

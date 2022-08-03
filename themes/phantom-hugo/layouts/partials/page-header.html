@@ -1,7 +1,7 @@
 <div class="page-title text-center">
-  <h2>{{ with .Title }}{{ index (split . " ") 0 | safeHTML }} 
+  <h2 id="text_font">{{ with .Title }}{{ index (split . " ") 0 | safeHTML }} 
     <span class="primary">{{ index (split . " ") 1 | safeHTML }}</span>{{ end }}
     <span class="title-bg">{{ .Params.Watermark }}</span>
   </h2>
-  <p>{{ .Params.Description }}</p>
+  <p id="text_font" style="font-size:22px;">{{ .Params.Description }}</p>
 </div>

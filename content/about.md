@@ -1,8 +1,8 @@
 ---
 title: "About Me"
 watermark: "About"
-image: "img/author.jpg"
-description : "I am working as a professional UI/UX Designer since 2007. Worked in more than 200 live projects and also with more than 120 different clients!"
+image: "img/about.svg"
+description : "I am a full-time Data Scientist with 5+ years of experience in (but not limited to) designing predictive models using machine learning and different statistical methods. A newbie in NLP, trying to solve problems using Named Entity Recognition!"
 layout: "about"
 weight: 2
 prev_page: "welcome"
@@ -23,23 +23,27 @@ author_info:
 
 # skill set
 skills:
-- name : "Photoshop"
+- name : "Python"
   percentage : "90%"
   
-- name : "Illustrator"
-  percentage : "78%"
-  
-- name : "After Fffects"
+- name : "R"
   percentage : "85%"
   
-- name : "HTML5"
-  percentage : "95%"
+- name : "SQL"
+  percentage : "85%"
   
-- name : "WordPress"
-  percentage : "75%"
-  
-- name : "jQuery"
-  percentage : "70%"
+- name : "Apache Spark"
+  percentage : "65%"
+    
+- name : "H2O.ai"
+  percentage : "55%"
+
+- name : "Tensorflow"
+  percentage : "35%"
+
+- name : "Pytorch"
+  percentage : "25%"
+
 ---
 
 I'm a multi-award winning designer that has been specialising in web design for the past three years although I have experience in branding and print.Projects.

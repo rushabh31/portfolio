@@ -19,12 +19,19 @@
     src: url("../fonts/Chasing.ttf") format("truetype");
   }
 
+  @font-face{
+    font-family: "BeautyDemo";
+    font-size: 40px;
+    src: url("../fonts/BeautyDemo.ttf") format("truetype");
+  }
+  
+
   #text_font{
     font-family: "chasing";
     color: cornsilk;
   }
 
-  #text_font{
-    font-family: "chasing";
-    color: cornsilk;
+  #text_BeautyDemo_font{
+    font-family: "BeautyDemo";
+    color: #F4D35E;
   }
