@@ -1,0 +1,30 @@
+/*------------------------------------------------
+    Welcome Page
+-------------------------------------------------*/
+
+.author-image-large {
+    position: absolute;
+    right: 150px;
+    top: 100px;
+    margin-top: 10px;
+
+    img {
+        @include calc(height, "80vh - 4px");
+    }
+}
+
+@font-face{
+    font-family: "chasing";
+    font-size: 40px;
+    src: url("../fonts/Chasing.ttf") format("truetype");
+  }
+
+  #text_font{
+    font-family: "chasing";
+    color: cornsilk;
+  }
+
+  #text_font{
+    font-family: "chasing";
+    color: cornsilk;
+  }

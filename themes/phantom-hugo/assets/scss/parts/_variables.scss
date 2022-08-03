@@ -1,0 +1,34 @@
+//
+// Typography
+//
+
+$font-stack: "Libre Baskerville",serif;
+$open-sans:'Open Sans',sans-serif;
+
+//
+// Colors
+//
+$primary-color: #DA4167;
+$light-dark: #1e2530;
+$light: #fff;
+$text-color: #ababab;
+$title-color: #1e2530;
+$border-color: #eee;
+$darksky: radial-gradient(ellipse at bottom, #083D77 0%, #090A0F 100%);
+$lightsky: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+//
+// Hexagon
+//
+$sqrt3: 1.7320508075688772;
+$edgeSize: 100px;
+$hexWidth: $edgeSize * 2;
+$hexHeight: $sqrt3 * $edgeSize;
+
+// Display
+$borderHover: 15px;
+
+// Easing
+$ease-out-expo: cubic-bezier(0.19, 1, 0.02, 1);
+$ease-out-quart: cubic-bezier(0.165, 0.84, 0.44, 1);
+
+
