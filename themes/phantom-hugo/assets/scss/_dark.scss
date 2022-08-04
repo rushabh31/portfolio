@@ -1,9 +1,9 @@
 .dark {
-	background-color: #0c0f15;
+	background-color: radial-gradient(ellipse at bottom, #083D77 0%, #090A0F 100%);
 
-	.page-home .overlay {
-		background-color: rgba(#0e1118, 0.97);
-	}
+	// .page-home .overlay {
+	// 	background-color: rgba(#0e1118, 0.97);
+	// }
 
 	.page-title {
 		h2 {
@@ -11,7 +11,7 @@
 		}
 
 		.title-bg {
-			color: rgba(#46587c, 0.06);
+			color: rgba(#F4D35E, 0.12);
 		}
 	}
 

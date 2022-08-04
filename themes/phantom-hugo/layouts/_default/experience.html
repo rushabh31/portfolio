@@ -2,7 +2,10 @@
 
 <main class="site-wrapper">
   <div class="pt-table">
-    <div class="pt-tablecell page-resume relative">
+    <div class="pt-tablecell page-home relative">
+      <div class="stars"></div>
+      <div class="stars2"></div>
+      <div class="stars3"></div>
       <!-- .close -->
       <a href="{{ site.BaseURL }}" class="page-close"><i class="tf-ion-close"></i></a>
       <!-- /.close -->
@@ -12,6 +15,7 @@
           <div class="col-xs-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
             {{ partial "page-header.html" . }}
           </div>
+          <img id='img_width_exp' src="{{ .Params.Image | absURL }}" alt="author">
         </div> <!-- /.row -->
                     
           {{ with .Params.Experiences }}

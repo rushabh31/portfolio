@@ -165,7 +165,7 @@
 }
 
 .page-nav {
-	bottom: 20px;
+	bottom: 30px;
 	left: 0;
 	position: absolute;
 	right: 0;
@@ -383,7 +383,7 @@
 	position: relative;
 	width: 66px;
 	height: 38.11px;
-	background-color: #293342;
+	background-color: #EBEBD3;
 	margin: 19.05px 0;
 
 	&::before,
@@ -397,13 +397,13 @@
 
 	&::before {
 		bottom: 100%;
-		border-bottom: 19.05px solid #293342;
+		border-bottom: 19.05px solid #EBEBD3;
 	}
 
 	&::after {
 		top: 100%;
 		width: 0;
-		border-top: 19.05px solid #293342;
+		border-top: 19.05px solid #EBEBD3;
 	}
 }
 

@@ -50,13 +50,13 @@ weight = 2
 [[menu.main]]
 name = "Experience"
 pre = "tf-tools-2"
-url = "service"
+url = "experience"
 weight = 3
 
 [[menu.main]]
 name = "Education"
 pre = "tf-tools"
-url = "resume"
+url = "education"
 weight = 4
 
 [[menu.main]]
