@@ -6,7 +6,7 @@ description : "I am a full-time Data Scientist with 5+ years of experience in (b
 layout: "about"
 weight: 2
 prev_page: "welcome"
-next_page: "service"
+next_page: "experience"
 # author description
 author_info:
 - name : "Date of birth"

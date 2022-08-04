@@ -1,11 +1,11 @@
 ---
 title: "RUSHABH PATEL"
-watermark: "NAME"
+watermark: "Welcome"
 image: "img/welcome.svg"
 description: "this is meta description"
 layout: "welcome"
 weight: 1
-prev_page: "/"
+prev_page: ""
 next_page: "about"
 ---
 
