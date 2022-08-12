@@ -4,7 +4,7 @@ watermark: "Work"
 description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."
 layout: "works"
 weight: 5
-prev_page: "resume"
+prev_page: "experience"
 next_page: "testimonial"
 
 portfolio:
