@@ -13,10 +13,22 @@
               <!-- <img src="{{site.Params.logo | absURL }}" alt="{{ site.Title }}"> -->
               <p>{{site.Params.homepage_description | markdownify }}</p>
             </div>
+            {{ range site.Menus.main }}
+            <div class="example">
+              <div class="hexagon -big"><span class="text"><a href="welcome">Welcome</a></span></div>
+              <div class="hexagon -big"><span class="text"><a href="about">About</a></span></div>
+              <div class="hexagon -normal"><span class="text"><a href="experience">Experience</a></span></div>
+              <div class="hexagon -normal"><span class="text"><a href="education">Education</a></span></div>
+              <div class="hexagon -normal"><span class="text"><a href="testimonial">Testimonial</a></span></div>
+              <div class="hexagon -small"></div>
+              <div class="hexagon -normal"><span class="text"><a href="contact">Contact Me</a></span></div>
 
-            <div class="hexagon-menu clear">
-              {{ range site.Menus.main }}
-              <div class="hexagon-item">
+      
+              {{ end }}
+          </div>
+            <!-- <div class="hexagon-menu clear"> -->
+              <!-- {{ range site.Menus.main }} -->
+              <!-- <div class="hexagon-item">
                 <div class="hex-item">
                   <div></div>
                   <div></div>
@@ -41,8 +53,10 @@
                       fill="#F4D35E"></path>
                   </svg>
                 </a>
-              </div>
-              {{ end }}
+              </div> -->
+
+              
+              <!-- {{ end }} -->
             </div> <!-- /.hexagon-menu -->
           </div> <!-- /.col-xs-12 -->
         </div> <!-- /.row -->

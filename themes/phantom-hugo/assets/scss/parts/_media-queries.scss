@@ -127,6 +127,26 @@
 		}
 	}
 
+	.hexagon-menu {
+		float: none;
+		margin: 0 auto 50px;
+		--l: calc(100vw/var(--n-cols));
+		--hl: calc(.5*var(--l));
+		--ri: calc(.5*1.73205*var(--l));
+		box-sizing: border-box;
+		display: grid;
+		place-content: center;
+		grid-template: repeat(var(3), var(--l))/repeat(var(6), var(--ri));
+		grid-gap: var(--hl) 0;
+		overflow: hidden;
+		margin: 0;
+		padding: var(--hl) 0;
+		height: 100vh;
+		// background: #262626;
+		filter: drop-shadow(2px 2px 5px);
+
+	}
+
 	.hexagon-item {
 		float: none;
 		margin: 0 auto 50px;

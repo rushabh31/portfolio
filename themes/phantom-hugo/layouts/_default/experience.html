@@ -18,27 +18,33 @@
           <div class="col-xs-12 col-md-6">
             <div class="about-author">
                <img id='img_width_edu' src="{{ .Params.Image | absURL }}" alt="author">
-             </div><!-- /.about-author -->
+            </div><!-- /.about-author -->
           </div> <!-- /.col -->
                     
           {{ with .Params.Experiences }}
           <div class="col-xs-12 col-sm-6">
             <div class="history-block">
               <div class="section-title light clear">
-                <h3>{{ .title | markdownify }}</h3>
+                <h3 id="text_font" >{{ .title | markdownify }}</h3>
               </div>
               <!-- /.section-title -->
               <div class="history-scroller">
                 {{ range .experience }}
                 <div class="history-item">
                   <div class="history-icon">
-                    <span class="history-hex"></span>
-                    <i class="{{ .icon }}"></i>
+                    <svg viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                      <defs>
+                        <pattern id="img" patternUnits="userSpaceOnUse" width="100" height="100">
+                          <image href="https://www.seekpng.com/png/detail/209-2096070_auburn-university-link-operated-by-external-parties-auburn.png" x="-25" width="150" height="100" />
+                        </pattern>
+                      </defs>
+                      <polygon points="50 1 95 25 95 75 50 99 5 75 5 25" fill="url(#img)"/>
+                    </svg>
                   </div>
                   <div class="history-text">
-                    <h5>{{ .name }}</h5>
+                    <h5 id="text_font" >{{ .name }}</h5>
                     <span>{{ .duration }}</span>
-                    <p>{{ .description | markdownify }}</p>
+                    <p id="text_font" >{{ .description | markdownify }}</p>
                   </div>
                 </div>
                 {{ end }}

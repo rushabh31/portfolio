@@ -197,8 +197,8 @@
           <div class="col-xs-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
             {{ partial "page-header.html" . }}
           </div>
-          <div class="col-xs-12 col-md-6">
-            <div class="about-author", id="about-author">
+          <div class="col-xs-12 col-sm-6">
+            <div class = "pencil_section">
               <div class="pencil">
                 <div class="rubber"></div>
                 <div class="ferrule">
@@ -215,10 +215,7 @@
                 <div class="graphite"></div>
               </div>
               <div class="line"></div>
-
-
-               <!-- <img id='img_width_edu' src="{{ .Params.Image | absURL }}" alt="author"> -->
-            </div><!-- /.about-author -->
+            </div>
           </div> <!-- /.col -->
 
 
@@ -226,7 +223,7 @@
           <div class="col-xs-12 col-sm-6">
             <div class="history-block">
               <div class="section-title light clear">
-                <h3>{{ .title | markdownify }}</h3>
+                <h3 id="text_font">{{ .title | markdownify }}</h3>
               </div>
               <!-- /.section-title -->
               <div class="history-scroller">
@@ -245,9 +242,9 @@
                     </svg>
                   </div>
                   <div class="history-text">
-                    <h5>{{ .name  | markdownify}}</h5>
+                    <p style = "margin-bottom:-10px;" id="text_font">{{ .name  | markdownify}}</p>
                     <span>{{ .duration }}</span>
-                    <p>{{ .description | markdownify }}</p>
+                    <p id="text_font">{{ .description | markdownify }}</p>
                   </div>
                 </div>
                 {{ end }}

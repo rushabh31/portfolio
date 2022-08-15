@@ -3,5 +3,5 @@
     <span class="primary">{{ index (split . " ") 1 | safeHTML }}</span>{{ end }}
     <span class="title-bg">{{ .Params.Watermark }}</span>
   </h2>
-  <p id="text_font" style="font-size:22px;">{{ .Params.Description }}</p>
+  <span style="font-size:22px;">{{ .Params.Description | markdownify }}</span>
 </div>
