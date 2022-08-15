@@ -2,7 +2,7 @@
 title: "About Me"
 watermark: "About"
 image: "img/about.svg"
-description : "I am a full-time Data Scientist with 5+ years of experience in (but not limited to) designing predictive models using machine learning and different statistical methods. A newbie in NLP, trying to solve problems using Named Entity Recognition!"
+description : '<p id="text_font" style="font-size:22px;">I am a full-time Data Scientist with 5+ years of experience in (but not limited to) designing predictive models using machine learning and different statistical methods. A newbie in NLP, trying to solve problems using Named Entity Recognition!'
 layout: "about"
 weight: 2
 prev_page: "welcome"

@@ -2,7 +2,12 @@
 title: "Experience"
 watermark: "experience"
 image: "img/experience.svg"
-description: "Work, Internships and Publications"
+description: '<blockquote>
+  <div class="blockquote-background"> 
+    <p id="text_font" style="font-size:22px;">The only source of knowledge is experience.<br> &#8212;
+Albert Einstein </p>
+  </div>
+</blockquote> '
 layout: "experience"
 weight: 4
 prev_page: "about"
