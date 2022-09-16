@@ -1,6 +1,6 @@
-baseURL = "https://demo.themefisher.com/phantom-hugo/"
+baseURL = "https://rushabh.info/"
 languageCode = "en-us"
-title = "Phantom | Personal Resume Template"
+title = "Rushabh Patel | Portfolio"
 theme = "phantom-hugo"
 # google analytics
 googleAnalytics = "" # example : UA-123-45
