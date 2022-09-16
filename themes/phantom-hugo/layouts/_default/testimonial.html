@@ -2,7 +2,10 @@
 
 <main class="site-wrapper">
   <div class="pt-table">
-    <div class="pt-tablecell page-quotes relative">
+    <div class="pt-tablecell page-home relative">
+      <div class="stars"></div>
+      <div class="stars2"></div>
+      <div class="stars3"></div>
       <!-- .close -->
       <a href="{{ site.BaseURL }}" class="page-close"><i class="tf-ion-close"></i></a>
       <!-- /.close -->
@@ -25,12 +28,12 @@
                     <div class="hexBottom"></div>
                   </div>
                   <figcaption>
-                    <h4>{{ .name | markdownify }}</h4>
-                    <span>{{ .designation | markdownify }}</span>
+                    <h4 id="text_font">{{ .name | markdownify }}</h4>
+                    <span id="text_font">{{ .designation | markdownify }}</span>
                   </figcaption>
                 </figure>
                 <div class="text">
-                  <p>{{ .content }}</p>
+                  <p>{{ .content | markdownify }}</p>
                 </div>
               </div>
               {{ end }}

@@ -106,14 +106,24 @@
 		overflow-x: hidden;
 	}
 
-	// .pt-table {
-	// 	height: auto;
-	// }
+	.calendly-badge-widget {
+		position: absolute;
+		// bottom: 15px;
+		z-index: 9998;
+	}
 
-	// .pt-table,
-	// .pt-tablecell {
-	// 	display: block;
-	// }
+	.pt-table {
+		height: auto;
+	}
+
+	.ht-well{
+		height: 100vh;
+	}
+
+	.pt-table,
+	.pt-tablecell {
+		display: block;
+	}
 
 	.page-title {
 		margin-bottom: 45px;

@@ -32,18 +32,12 @@
                 {{ range .experience }}
                 <div class="history-item">
                   <div class="history-icon">
-                    <svg viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                      <defs>
-                        <pattern id="img" patternUnits="userSpaceOnUse" width="100" height="100">
-                          <image href="https://www.seekpng.com/png/detail/209-2096070_auburn-university-link-operated-by-external-parties-auburn.png" x="-25" width="150" height="100" />
-                        </pattern>
-                      </defs>
-                      <polygon points="50 1 95 25 95 75 50 99 5 75 5 25" fill="url(#img)"/>
-                    </svg>
+                    <img class="circular_image" src="{{ .logo_path  | absURL  }}"/>
                   </div>
                   <div class="history-text">
-                    <h5 id="text_font" >{{ .name }}</h5>
-                    <span>{{ .duration }}</span>
+                    <p id="text_font" style="margin-bottom: -4px;">{{ .name  | markdownify}}</p>
+                    <span><p id="text_font" style="font-size:15px;margin-bottom: -2px;">{{ .position | markdownify}}</p> </span>
+                    <p style="font-size:13px; margin-bottom: -4px;">{{.duration}}</p>
                     <p id="text_font" >{{ .description | markdownify }}</p>
                   </div>
                 </div>

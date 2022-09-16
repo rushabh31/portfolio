@@ -9,6 +9,7 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
+            <span id="logo-name"> Rushabh Patel</span>
             <div class="page-title home text-center">
               <!-- <img src="{{site.Params.logo | absURL }}" alt="{{ site.Title }}"> -->
               <p>{{site.Params.homepage_description | markdownify }}</p>
@@ -20,48 +21,17 @@
               <div class="hexagon -normal"><span class="text"><a href="experience">Experience</a></span></div>
               <div class="hexagon -normal"><span class="text"><a href="education">Education</a></span></div>
               <div class="hexagon -normal"><span class="text"><a href="testimonial">Testimonial</a></span></div>
-              <div class="hexagon -small"></div>
-              <div class="hexagon -normal"><span class="text"><a href="contact">Contact Me</a></span></div>
-
-      
-              {{ end }}
-          </div>
-            <!-- <div class="hexagon-menu clear"> -->
-              <!-- {{ range site.Menus.main }} -->
-              <!-- <div class="hexagon-item">
-                <div class="hex-item">
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                </div>
-                <div class="hex-item">
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                </div>
-                <a href="{{.URL | absURL}}" class="hex-content">
-                  <span class="hex-content-inner">
-                    <span class="icon">
-                      <i class="{{.Pre}}"></i>
-                    </span>
-                    <span class="title">{{.Name }}</span>
-                  </span>
-                  <svg viewbox="0 0 173.20508075688772 200" height="200" width="174" version="1.1"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z"
-                      fill="#F4D35E"></path>
-                  </svg>
-                </a>
-              </div> -->
-
-              
-              <!-- {{ end }} -->
+              <div class="hexagon -small" style="display: none; visibility: hidden;"></div>
+              <div class="hexagon -normal"><span class="text"><a href="contact">Contact</a></span></div>
+            {{ end }}
+            </div>
             </div> <!-- /.hexagon-menu -->
           </div> <!-- /.col-xs-12 -->
         </div> <!-- /.row -->
       </div> <!-- /.container -->
     </div> <!-- /.pt-tablecell -->
+    <!-- <span id="index_signature" class="copyright">{{ site.Params.copyright | markdownify }}</span> -->
   </div> <!-- /.pt-table -->
+  
 </main> <!-- /.site-wrapper -->
 {{ end }}

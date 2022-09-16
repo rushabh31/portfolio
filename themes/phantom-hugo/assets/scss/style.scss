@@ -29,6 +29,7 @@
 	right: 0;
 	top: 0;
 	z-index: 1000;
+	height: 100%;
 	@include flexbox();
 
 	&.active.hidden {
@@ -104,8 +105,9 @@
 		position: relative;
 		z-index: 0;
 		font-weight: 900;
-		text-transform: uppercase;
+		// text-transform: uppercase;
 	}
+	
 
 	p {
 		font-size: 16px;
@@ -347,13 +349,13 @@
 
 	&>* {
 		display: table-cell;
-		vertical-align: middle;
+		vertical-align:top;
 	}
 
 	.history-icon {
 		padding-right: 25px;
 		position: relative;
-		width: 137px;
+		width: 100px;
 
 		i {
 			font-size: 18px;
@@ -383,7 +385,7 @@
 	position: relative;
 	width: 66px;
 	height: 38.11px;
-	background-color: #EBEBD3;
+	// background-color: #EBEBD3;
 	margin: 19.05px 0;
 
 	&::before,
@@ -708,7 +710,7 @@
 	position: relative;
 	width: 43px;
 	height: 24.83px;
-	background-color: #1e2530;
+	background-color: #da4167;
 	margin: 12.41px 0;
 	@include transition (all 0.3s ease 0s);
 
@@ -724,13 +726,13 @@
 
 	&::before {
 		bottom: 100%;
-		border-bottom: 12.41px solid #1e2530;
+		border-bottom: 12.41px solid #da4167;
 	}
 
 	&::after {
 		top: 100%;
 		width: 0;
-		border-top: 12.41px solid #1e2530;
+		border-top: 12.41px solid #da4167;
 	}
 
 	&:hover {
@@ -977,7 +979,7 @@
 }
 
 
-mark {
+markyellow {
 	margin: 0 -0.4em;
 	padding: 0.1em 0.4em;
 	border-radius: 0.8em 0.3em;
@@ -987,6 +989,21 @@ mark {
 	  rgba(255, 225, 0, 0.7) 100%,
 	  rgba(255, 225, 0, 0.7) 100%,
 	  rgba(255, 225, 0, 0.7) 100%,
+	);
+	-webkit-box-decoration-break: clone;
+	box-decoration-break: clone;
+  }
+
+markpink {
+	margin: 0 -0.4em;
+	padding: 0.1em 0.4em;
+	border-radius: 0.8em 0.3em;
+	// background: transparent;
+	background-image: linear-gradient(
+	  to right,
+	  rgba(194, 20, 113, 0.7) 100%,
+	  rgba(194, 20, 113, 0.7) 100%,
+	  rgba(194, 20, 113, 0.7) 100%,
 	);
 	-webkit-box-decoration-break: clone;
 	box-decoration-break: clone;
@@ -1045,9 +1062,9 @@ mark {
     max-width: 1100px;
     height: 40rem;
     margin: 2rem auto;
-    background: radial-gradient(circle, #E9F6D0 0%, #E9F6D0 70%, transparent 70%, transparent 100%),
-        radial-gradient(circle, #da4167 0%, #da4167 70%, transparent 70%, transparent 100%),
-        radial-gradient(circle, #AAE051 0%, #AAE051 70%, transparent 70%, transparent 100%);
+    background: radial-gradient(circle, #c1cc78 0%, #c1cc78 70%, transparent 70%, transparent 100%),
+        radial-gradient(circle, #c1cc78 0%, #c1cc78 70%, transparent 70%, transparent 100%),
+        radial-gradient(circle, #c1cc78 0%, #c1cc78 70%, transparent 70%, transparent 100%);
     background-repeat: no-repeat;
     background-size: 20rem 20rem, 15rem 15rem, 10rem 10rem;
     background-position: 5rem 5rem, 20rem 10rem, 14rem 24rem;
@@ -1086,8 +1103,8 @@ mark {
         height: 100%;
         top: 0;
         left: 0;
-        background: linear-gradient(-120deg, #FFECE2 0%, #FFFFFF 100%);
-        
+        // background: linear-gradient(-120deg, #FFECE2 0%, #FFFFFF 100%);
+        background:cornsilk;
         // Sorry, IE, not this time
         clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
     }
@@ -1098,14 +1115,16 @@ mark {
         width: 15rem;
         
         > .text {
-            font-size: 2rem;
+            font-size: 4rem;
+			font-family: "BeautyDemo";
         }
     }
     
     
     &.-normal {
         > .text {
-            font-size: 1rem;
+            font-size: 2.2rem;
+			font-family: "BeautyDemo";
         }
     }
     
@@ -1113,7 +1132,14 @@ mark {
     &.-small {
         height: 6rem;
         width: 6rem;
+
+		> .text {
+            font-size: 1.5rem;
+			font-family: "BeautyDemo";
+        }
     }
+
+
     
     
     &:nth-of-type(1) { top: 3rem;  left: 5rem;  }
@@ -1137,7 +1163,7 @@ mark {
         width: 60%;
         text-align: center;
         font-weight: bold;
-        color: #DA627D;
+        color: #000000;
         z-index: 2;
     }
     
@@ -1166,8 +1192,141 @@ mark {
         &:nth-of-type(5) { top: 48rem; left: 9rem; }
 
         &:nth-of-type(6) { top: 20rem; left: 14rem;  height: 4rem; width: 4rem; }
-        &:nth-of-type(7) { top: 54rem; left: 3rem;  }
+        &:nth-of-type(7) { top: 54rem; left: 0rem;  }
         &:nth-of-type(8) { top: 1rem;  left: 1rem;  }
         &:nth-of-type(9) { top: 36rem; left: 4rem; height: 3rem; width: 3rem; }
     }
 }
+
+
+#index_signature{
+	font-family: "BeautyDemo";
+    color: #F4D35E;
+	font-size: 25px;
+	display: table;
+    margin: 0 auto;
+	min-height: calc(100vh - 40px);
+}
+
+
+.circular_image {
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	overflow: hidden;
+	display:inline-block;
+	vertical-align:middle;
+  }
+  .circular_image img{
+	width:100%;
+  }
+
+
+
+#logo-name {
+	font-family: "BeautyDemo";
+	font-weight: bold;
+	padding: 0 10px;
+	font-size: 75px;
+	color: #EDFF71;
+	margin:auto; display:table;
+  }
+
+
+  @media screen and (max-width: 30rem) {
+	#logo-name {
+		font-family: "BeautyDemo";
+		font-weight: bold;
+		padding: 0 10px;
+		font-size: 45px;
+		color: #EDFF71;
+		margin:auto; display:table;
+	  }
+
+  }
+
+
+.hidden { display: none;}
+.readmore { margin: 0 5px;}
+
+.calendly-badge-widget {
+    left: 20px;
+    bottom: 15px;
+    z-index: 9998;
+}
+
+
+.social-media-div {
+	font-size: 2em;
+  }
+  
+  .icon-button i {
+	color: white;
+  }
+  .icon-button {
+	margin-bottom: 10px;
+  }
+  
+  .icon-button i {
+	border-radius: 2.6rem;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1.3rem;
+	height: 2.6rem;
+	line-height: 2.6rem;
+	margin: 0 5px;
+	position: relative;
+	text-align: center;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	width: 2.6rem;
+	margin-bottom: 10px;
+  }
+  
+  .facebook i {
+	background-color: #3b5998;
+  }
+  
+  .linkedin i {
+	background-color: #0e76a8;
+  }
+  
+  .github i {
+	background-color: #333;
+  }
+  
+  .gitlab i {
+	background-color: #fca326;
+  }
+  
+  .google i {
+	background-color: #ea4335;
+  }
+  
+  .twitter i {
+	background-color: #1da1f2;
+  }
+  
+  .instagram {
+	background-color: #E4405F;
+  }
+  
+  /*Hover Transition*/
+  .twitter i:hover, .google i:hover, .gitlab i:hover,
+  .github i:hover ,.linkedin i:hover ,.facebook i:hover, .instagram i:hover{
+	background-color: black;
+	transition: 0.3s ease-in;
+  }
+  
+  /* Media Query */
+  @media (max-width: 768px) {
+	.social-media-div {
+	  text-align: center;
+	}
+  }
+  
+  .social-media-div {
+	text-align: center;
+  }
